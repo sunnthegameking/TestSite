@@ -3,5 +3,13 @@
   "builds": [
     { "src": "*.html", "use": "@vercel/static" },
     { "src": "*.css", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/Medicare.html" },
+    { "src": "/services", "dest": "/services.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/subscriptions", "dest": "/subscriptions.html" },
+    { "src": "/your-data", "dest": "/your-data.html" },
+    { "src": "/login", "dest": "/login.html" }
   ]
 }
