@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" },
+    { "src": "*.css", "use": "@vercel/static" }
+    { "src": "Images/**", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/Medicare.html" },
+    { "src": "/services", "dest": "/services.html" },
+    { "src": "/about", "dest": "/about.html" },
+    { "src": "/subscriptions", "dest": "/Subsricptions.html" },
+    { "src": "/your-data", "dest": "/YourData.html" },
+    { "src": "/login", "dest": "/login.html" }
+  ]
+}
