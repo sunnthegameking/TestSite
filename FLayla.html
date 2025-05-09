@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MediData</title>
+  <link rel="icon" href="/images/MediDataLogo.jpg">
+  <link rel="stylesheet" href="/style.css" />
+  <style>
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes backgroundFlash {
+        0% {
+            background-color: #d32f2f;
+        }
+        25% {
+            background-color: #1976d2;
+        }
+        50% {
+            background-color: #388e3c;
+        }
+        75% {
+            background-color: #fbc02d;
+        }
+        100% {
+            background-color: #8e24aa;
+        }
+    }
+
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: backgroundFlash 500ms infinite;
+    }
+    h1 {
+        animation: spin 300ms infinite linear;
+    }
+  </style>
+  <h1 style="margin-top: 0px; margin-bottom: 50px; text-align: center; font-family: sans-serif; font-size: 3rem; letter-spacing: 0.15rem; text-transform: uppercase; color:#fff;
+  text-shadow: -4px 4px #814a43, -8px 8px #d332ee, -12px 12px #766278, -16px 16px #e79e43, -20px 20px #d58784, -24px 24px #1bfd12, -28px 28px #8e3993, -32px 32px #d27bdb, -36px 36px #3807c3, -40px 40px #cee4ac, -44px 44px #f5d850, -48px 48px #7be51b, -52px 52px #e5c3d8, -56px 56px #6258f5, -60px 60px #a2eded, -64px 64px #b83b2d, -68px 68px #ab20b3, -72px 72px #024236, -76px 76px #c91c33, -80px 80px #f70011, -84px 84px #14e8c3, -88px 88px #38cf79, -92px 92px #33ce5c, -96px 96px #97d21f, -100px 100px #bcb9e3, -104px 104px #fff037, -108px 108px #a938aa, -112px 112px #b99a59, -116px 116px #4bc913, -120px 120px #aefd07, -124px 124px #0cbe62, -128px 128px #3feed3, -132px 132px #a90a63, -136px 136px #e27363, -140px 140px #6875af, -144px 144px #c444ad, -148px 148px #47e679, -152px 152px #248795, -156px 156px #25efed, -160px 160px #5587c6, -164px 164px #387fb1, -168px 168px #784039, -172px 172px #2b3edb, -176px 176px #561c1d, -180px 180px #93d750, -184px 184px #2ed993, -188px 188px #daff74, -192px 192px #4e4598, -196px 196px #5c43fe, -200px 200px #220be5, -204px 204px #499cc8, -208px 208px #01aee1, -212px 212px #c49e5f, -216px 216px #8d198d, -220px 220px #889391, -224px 224px #2d2ada, -228px 228px #28fc6e, -232px 232px #3d1bb8, -236px 236px #5f5d70, -240px 240px #d04c62, -244px 244px #ba2040, -248px 248px #3be779, -252px 252px #827363, -256px 256px #285720, -260px 260px #3758d0, -264px 264px #be4993, -268px 268px #9b706e, -272px 272px #c011b7, -276px 276px #bb3c33, -280px 280px #958834, -284px 284px #d715d4, -288px 288px #130b2b, -292px 292px #8dbab6, -296px 296px #077632, -300px 300px #d5939b, -304px 304px #6a3c3b, -308px 308px #ce433e, -312px 312px #4597c7, -316px 316px #2a34be, -320px 320px #a306f2, -324px 324px #eb39c7, -328px 328px #e598a4, -332px 332px #fcd39d, -336px 336px #f9eda6, -340px 340px #c79629, -344px 344px #4ad960, -348px 348px #1c8170, -352px 352px #6f81b0, -356px 356px #3e2215, -360px 360px #203b0f, -364px 364px #1979e1, -368px 368px #2c6b83, -372px 372px #c32fd5, -376px 376px #e93837, -380px 380px #2b9655, -384px 384px #5c5091, -388px 388px #9ed4b8, -392px 392px #aae6ae, -396px 396px #9daa10, -400px 400px #74d905, -404px 404px #01eaa5, -408px 408px #6cba8a, -412px 412px #69d3f9, -416px 416px #f1f972, -420px 420px #a1d718, -424px 424px #7ba502, -428px 428px #c33c3e, -432px 432px #861864, -436px 436px #5f864b, -440px 440px #195b8b, -444px 444px #ce33a9, -448px 448px #6f7a47, -452px 452px #cc5652, -456px 456px #dd0c8a, -460px 460px #b28d40, -464px 464px #ccf8c0, -468px 468px #eca102, -472px 472px #2ba5cf, -476px 476px #ce6268, -480px 480px #041f7e, -484px 484px #986324, -488px 488px #750d02, -492px 492px #4f986e, -496px 496px #b6b7f5, -500px 500px #073d58, -504px 504px #ec4417, -508px 508px #caa2d0, -512px 512px #65f3a2, -516px 516px #e2048d, -520px 520px #6da7e7, -524px 524px #dd7e0d, -528px 528px #10e98b, -532px 532px #01f39d, -536px 536px #a1a12f, -540px 540px #0ec0d0, -544px 544px #e7f976, -548px 548px #d9a1ea, -552px 552px #f34686, -556px 556px #3842df, -560px 560px #97a610, -564px 564px #ab6103, -568px 568px #787b9c, -572px 572px #75c3e9, -576px 576px #c54262, -580px 580px #f87bf7, -584px 584px #5d8386, -588px 588px #08cabf, -592px 592px #b0341c, -596px 596px #ca78c0, -600px 600px #d3f12d, -604px 604px #a27a04, -608px 608px #733279, -612px 612px #2444ea, -616px 616px #5a1f20, -620px 620px #894b62, -624px 624px #75c47c, -628px 628px #385d6d, -632px 632px #52231b, -636px 636px #c1ffad, -640px 640px #35acbf, -644px 644px #75f7ba, -648px 648px #681d95, -652px 652px #341574, -656px 656px #9670ee, -660px 660px #2c0dd4, -664px 664px #377d93, -668px 668px #65a752, -672px 672px #ad07c0, -676px 676px #798002, -680px 680px #df1a7c, -684px 684px #9b0438, -688px 688px #8dc21b, -692px 692px #a6383b, -696px 696px #8640b6, -700px 700px #1493a7, -704px 704px #3164b0, -708px 708px #eaf775, -712px 712px #57f981, -716px 716px #7eb78e, -720px 720px #8c5e72, -724px 724px #5f1e06, -728px 728px #1374cc, -732px 732px #d63726, -736px 736px #fc0631, -740px 740px #875c04, -744px 744px #abd570, -748px 748px #e57b9a, -752px 752px #3da9a2, -756px 756px #e8b22b, -760px 760px #7be967, -764px 764px #b58151, -768px 768px #e8baaa, -772px 772px #862010, -776px 776px #eeb36f, -780px 780px #5ba01b, -784px 784px #da1e2f, -788px 788px #3631e5, -792px 792px #87639c, -796px 796px #1bf943, -800px 800px #29858c, -804px 804px #4d3483, -808px 808px #ca6af1, -812px 812px #ab50ca, -816px 816px #9b2b2c, -820px 820px #3e6e21, -824px 824px #5fcaeb, -828px 828px #ff3de1, -832px 832px #897c2f, -836px 836px #230bc9, -840px 840px #75071b, -844px 844px #4209d3, -848px 848px #380498, -852px 852px #ae28c9, -856px 856px #fc949f, -860px 860px #cc28d6, -864px 864px #9c1d91, -868px 868px #63c682, -872px 872px #395b93, -876px 876px #0107ab, -880px 880px #509253, -884px 884px #f7f9f7, -888px 888px #213736, -892px 892px #d25453, -896px 896px #cb9f77, -900px 900px #da5cd1, -904px 904px #7dabe5, -908px 908px #6b7eab, -912px 912px #77c209, -916px 916px #f80ffd, -920px 920px #bdfe31, -924px 924px #312778, -928px 928px #6005e6, -932px 932px #a6cfde, -936px 936px #567b48, -940px 940px #afad67, -944px 944px #2e614f, -948px 948px #f7d2f5, -952px 952px #62bb09, -956px 956px #a487da, -960px 960px #6915db, -964px 964px #4dc42a, -968px 968px #08c4b9, -972px 972px #ecfda8, -976px 976px #3400f4, -980px 980px #507ae2, -984px 984px #de0651, -988px 988px #34293a, -992px 992px #a97b0c, -996px 996px #e36337, -1000px 1000px #32519f;"> 
+  LAYLA IS STUPID AND EVERYONE HATES HER</h1>
+</head>
+<body>
+</body>
+</html>

@@ -1,66 +1,87 @@
-/* Basic reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Times New Roman', Times, serif;
+/* style.css */
+*{
+  font-family: 'Times New Roman';
 }
-
+/* Base setup */
 body {
-  background-color: lightgrey;
-}
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: var(--font-color, #000000); /* default font color */
+  }
+  
+  /* Custom font color variables - easy to override */
+  :root {
+    --font-color: #000000;
+  }
+  /* Utility classes for font colors */
+  .text-red    { color: red; }
+  .text-green  { color: green; }
+  .text-blue   { color: blue; }
+  .text-yellow { color: yellow; }
+  .text-purple { color: purple; }
+  .text-pink   { color: pink; }
+  .text-orange { color: orange; }
+  .text-black  { color: black; }
+  .text-white  { color: white; }
+  .text-gray   { color: gray; }
+  
+  /* You can also add custom hex or RGB color classes */
+  .text-custom1 { color: #1abc9c; }   /* turquoise */
+  .text-custom2 { color: rgb(255, 99, 71); } /* tomato */
+  
+    /*Main part's css*/
+    body {
+      background-color: lightgrey;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .top_banner{
+      background-color: #2b62ba; 
+      color: #ffffff; 
+      display: flex; 
+      align-items: center; 
+      justify-content: space-between; 
+      width: 100%;
+    }
+    .top_banner_pic{
+      width: 20%; 
+      max-width: 150px; 
+      height: auto;
+    }
+    
+  /*Links css*/
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  /*Login css */
+  .login{
+    justify-content: center; 
+    align-items: center; 
+    display: flex; 
+    height: 100vh;
+  }
+  .login_box{
+    background-color: gray; 
+    color: black; 
+    padding: 10px 12px; 
+    border: 1px black;
+  }
+  /*Subscriptions css */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
 
-/* Banner */
-.top_banner {
-  background-color: #2b62ba;
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 20px;
-}
-
-.logo-placeholder, .profile-placeholder {
-  background-color: #1a4080;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  border-radius: 5px;
-}
-
-/* Navigation */
-nav {
-  padding: 10px 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  padding: 5px 10px;
-}
-
-nav a:hover {
-  background-color: #444;
-  border-radius: 3px;
-}
-
-/* Main content */
-main {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-h1 {
-  margin-bottom: 20px;
-}
-
-ul {
-  margin-left: 20px;
-  margin-top: 10px;
-}
-
-li {
-  margin-bottom: 5px;
-}
+  th, td {
+    text-align: center;
+    padding: 1rem;
+    border-right: 5px solid #000000;
+    border-left: 5px solid #000000;
+  }
+  button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
+  }
