@@ -8,7 +8,7 @@
     { "src": "/", "dest": "/Medicare.html" },
     { "src": "/services", "dest": "/services.html" },
     { "src": "/about", "dest": "/about.html" },
-    { "src": "/subscriptions", "dest": "/Subscriptions.html" },
+    { "src": "/subscriptions", "dest": "/Subsricptions.html" },
     { "src": "/your-data", "dest": "/YourData.html" },
     { "src": "/login", "dest": "/login.html" }
   ]
